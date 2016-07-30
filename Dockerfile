@@ -23,4 +23,4 @@ WORKDIR /notebook
 
 EXPOSE 8080
 
-CMD jupyter-notebook --port 8080 --transport tcp --ip 0.0.0.0 --KernelManager.autorestart=False --NotebookApp.allow_credentials=False --NotebookApp.base_url=${url} --NotebookApp.allow_origin="${origin}"
+CMD jupyter-notebook --port 8080 --transport tcp --ip 0.0.0.0 --KernelManager.autorestart=False --NotebookApp.allow_credentials=False --NotebookApp.base_url="${url}" --NotebookApp.allow_origin="${origin}"
