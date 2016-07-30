@@ -16,7 +16,7 @@ If you are running it behind a proxy then you need to specify an origin domain e
 
 `docker run -ti --rm -p 127.0.0.1:8080:8080 -e url='user1' -e origin='https://github.com' -h jupyter --name user1 shellmaster/docker-jupyter`
 
-If you don't want to keep it in the background then eg.:
+If you want to keep it in the background then eg.:
 
 `docker run -d -p 127.0.0.1:8080:8080 -e url='user1' -e origin='https://github.com' -h jupyter --name user1 shellmaster/docker-jupyter`
 
@@ -24,7 +24,7 @@ Info:
 
 Please remember to replace the 'user1' with a unique name to make sure that users from other images won't be able to access your session
 
-then you will need to go to http(s)://YOUR_DOMAIN/user1/
+then you will need to go to http(s)://YOUR_DOMAIN_OR_IP/user1/
 
 Please note that all kernels are using web sockets so if you are proxying from Apache (httpd) then you need a mod_proxy_wstunnel.so and good 'RewriteRule's or ProxyPass conditions.
 
