@@ -1,0 +1,3 @@
+#! /bin/bash
+# Contact: Rafal S.
+kill -1 `pidof /usr/bin/python3 /usr/local/bin/jupyter-notebook` 3>&2 2>/dev/null || echo "Jupyter is not running"
