@@ -32,6 +32,11 @@ There are some cases where jupyter is stopping for a very long time or you might
 
 `docker exec ID_OF_THE_INSTANCE jup-stop`
 
+- TODO:
+
+ - Add more info about mounting a "/notebook" volume for users
+ - Add examples of rewrite rules
+ - Add a link to a good GUI interface
 
 If you are interested in more details please send me an email (look at the Dockerfile)
 
